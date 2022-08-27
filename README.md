@@ -4,9 +4,9 @@
 
 ## About
 
-SH Crypt is base on library pycrypto library algorithm and use more specifically the Electronic Code Book (ECB) for symetric encryption and decryption.
+SH Crypt is base on library cryptography algorithm and use more specifically the Electronic Code Book (ECB) for symetric encryption and decryption.
 
-Here are some exemple to use the library.
+Here are some code example to use the library.
 
 #### Generate a key, encrypt and decrypt text
 ```
