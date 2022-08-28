@@ -36,7 +36,6 @@ class CryptSH:
         if len(key) not in [16, 24, 32]:
             raise CryptSHException(f"key must have len equal to 16, 24 or 32 : {len(key)}")
 
-        # self.cipher = AES.new(self.key, AES.MODE_ECB)
         self.cipher = Cipher(algorithms.AES(key), modes.ECB())
         self.padder = padding.PKCS7(algorithms.AES(key).block_size)
 
