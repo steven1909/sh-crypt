@@ -1,4 +1,15 @@
+# -*- coding:utf-8 -*-
+###
+#    Author:         Steven HELLEC
+#    Creation Date:  Monday, August 29th 2022, 7:11:19 pm
+#    Copyright (c) SMART DATA
+###
 
+import sh_crypt
+
+with open("setup.py","w") as fw:
+    fw.writelines(
+f"""
 # -*- coding:utf-8 -*-
 ###
 #    Author:         Steven HELLEC
@@ -10,7 +21,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='sh-crypt',
-    version='1.0.0',
+    version='{sh_crypt.__version__}',
     description='Simple symmetric encryption and decryption (ECB) for text',
     long_description=open('README.md').read(),
     url='https://github.com/steven1909/sh-crypt.git',
@@ -31,3 +42,5 @@ setup(
     ],
 )
 
+"""
+    )
