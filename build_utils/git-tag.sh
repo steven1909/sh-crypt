@@ -40,8 +40,8 @@ fi
 
 #Etape 3 : Vérification que la zone de stage Git est vide.
 echo -e "Etape 3/5 : Controle que la zone de stage soit vide."
-NEW_FILE=$(git status | grep -c "new file")
-MODIFIED_FILE=$(git status | grep -c "modified")
+NEW_FILE=$(git status | grep -c "new file|nouveau")
+MODIFIED_FILE=$(git status | grep -c "modifi")
 if [ $NEW_FILE = 0 ] && [ $MODIFIED_FILE = 0 ];then
 	echo -e "\t OK - La zone de staged est vide."
 else
