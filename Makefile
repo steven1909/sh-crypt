@@ -3,14 +3,16 @@ test:
 	coverage report -m
 
 build: test
-	python build_utils/gen_setup.py
+	rm -rf dist/
+	python gen_setup.py
 	python -m build .
+	tox
 
-tag: test build
+tag: build
 	bash build_utils/git-tag.sh
 
 deploy_test:
-	twine upload -r testpypi dist/*
+	twine upload -r testpypi dist/* --verbose
 	
 deploy_prod:
 	twine upload dist/*

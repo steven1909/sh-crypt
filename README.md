@@ -1,15 +1,16 @@
-# SH Crypt
-
-## A simple symetric encyption decryption algorithm
-
-## About
-
+SH Crypt
+========
+A simple symetric encyption decryption algorithm
+------------------------------------------------
+About
+-----
 SH Crypt is base on library cryptography algorithm and use more specifically the Electronic Code Book (ECB) for symetric encryption and decryption.
 
 Here are some code example to use the library.
 
-#### Generate a key, encrypt and decrypt text
-```
+Generate a key, encrypt and decrypt text
+----------------------------------------
+```python
 from sh_crypt import GenKeySH,CryptSH
 
 key = GenKeySH().gen_sym_key()
@@ -24,19 +25,18 @@ encrypt_password = crypt.encrypt_password(password)
 
 crypt.decrypt_password(encrypt_password)
 # 'Hello World !!'
-
 ```
 
-# Install
+Install
+-------
+You can install sh-crypt with [pip](https://pypi.org/project/sh-crypt/):
 
-You can install sh-crypt with [pip](https://pypi.python.org/pypi/pip/):
-
-```
+```python
 pip install sh-crypt
 ```
 
 or download the [sh-crypt source](https://github.com/steven1909/sh-crypt/archive/refs/heads/master.zip), unpack it, navigate to the top level directory, and install with the command:
 
-```
+```python
 python setup.py install
 ```

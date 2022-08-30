@@ -7,9 +7,8 @@
 
 import sh_crypt
 
-with open("setup.py","w") as fw:
-    fw.writelines(
-f"""
+with open("setup.py", "w") as fw:
+    fw.writelines(f"""
 # -*- coding:utf-8 -*-
 ###
 #    Author:         Steven HELLEC
@@ -24,6 +23,7 @@ setup(
     version='{sh_crypt.__version__}',
     description='Simple symmetric encryption and decryption (ECB) for text',
     long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     url='https://github.com/steven1909/sh-crypt.git',
     license='MIT license',
     author='Steven HELLEC',
@@ -42,5 +42,4 @@ setup(
     ],
 )
 
-"""
-    )
+""")
