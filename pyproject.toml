@@ -27,8 +27,8 @@ Source = "https://github.com/steven1909/sh-crypt.git"
 PyPI = "https://pypi.org/project/sh-crypt/"
 
 [tool.setuptools.packages.find]
-where = ["sh_crypt"]  # list of folders that contain the packages (["."] by default)
-exclude = ["sh_crypt.tests*"]  # exclude packages matching these glob patterns (empty by default)
+where = ["."]  # list of folders that contain the packages (["."] by default)
+exclude = ["*.tests*"]  # exclude packages matching these glob patterns (empty by default)
 namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
 
 [tool.pytest.ini_options]
