@@ -13,7 +13,7 @@ Generate a key, encrypt and decrypt text
 ```python
 from sh_crypt import GenKeySH,CryptSH
 
-key = GenKeySH().gen_sym_key()
+key = GenKeySH().gen_sym_key(path_store="mykey.txt")
 # Ex : 'e169344ae15719669ed2fecea1ac4773'
 
 password = "Hello World !!"
@@ -26,6 +26,8 @@ encrypt_password = crypt.encrypt_password(password)
 crypt.decrypt_password(encrypt_password)
 # 'Hello World !!'
 ```
+
+As you can see in the example, you can store your generated key in a text file and reuse it later, with the ```path_store``` argument.
 
 Install
 -------

@@ -11,9 +11,7 @@ import random as rnd
 import string
 import os
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 from .crypt import CryptSH, CryptSHException
 from .gen_key import GenKeySH, GenKeySHException
-
-# __all__ = [__version__, CryptSH, CryptSHException, GenKeySH, GenKeySHException]
