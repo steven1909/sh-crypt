@@ -4,5 +4,6 @@ include sh_crypt/*
 include setup.py
 include tox.ini
 exclude Makefile
+exclude build_utils/*
 global-exclude *tests/*
-global-exclude *.pyc
+global-exclude *.py[cod]

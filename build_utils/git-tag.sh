@@ -40,9 +40,8 @@ fi
 
 #Etape 3 : Vérification que la zone de stage Git est vide.
 echo -e "Etape 3/5 : Controle que la zone de stage soit vide."
-NEW_FILE=$(git status | grep -c "new file|nouveau")
-MODIFIED_FILE=$(git status | grep -c "modifi")
-if [ $NEW_FILE = 0 ] && [ $MODIFIED_FILE = 0 ];then
+STAGE_FILE=$(git status | grep -c "git add")
+if [ $STAGE_FILE = 0 ] && [ $MODIFIED_FILE = 0 ];then
 	echo -e "\t OK - La zone de staged est vide."
 else
 	echo -e "\t ERREUR - La zone de staged n'est pas vide. Commiter ou stasher tous vos fichiers avant."
@@ -51,8 +50,6 @@ fi
 
 #Etape 4 : On tag le repo_git actuel avec la version qui est dans le fichier version
 echo -e "Etape 4/5 : Taging Git."
-echo "$VERSION_REPO_GIT" > version
-git commit version -m"version $VERSION_REPO_GIT"
 git tag -a $VERSION_REPO_GIT -m"version $VERSION_REPO_GIT"
 
 #Etape 5 : On pousse les derniers commit sur le serveur

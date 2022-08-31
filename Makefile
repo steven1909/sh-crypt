@@ -1,10 +1,12 @@
-test: 
+update_conf: 
+	./build_utils/gen-pyproject.sh
+
+test:update_conf 
 	coverage run -m pytest
 	coverage report -m
 
 build: test
 	rm -rf dist/
-	python gen_setup.py
 	python -m build .
 	tox
 
