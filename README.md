@@ -45,7 +45,7 @@ You can install sh-crypt with [pip](https://pypi.org/project/sh-crypt/):
 pip install sh-crypt
 ```
 
-or download the [sh-crypt source](https://github.com/steven1909/sh-crypt/archive/refs/heads/master.zip), unpack it, navigate to the top level directory, and install with the command:
+or download the [sh-crypt source](https://github.com/steven1909/sh-crypt/tree/master), choose your version, and install with the command:
 
 ```python
 python setup.py install
