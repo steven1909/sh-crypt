@@ -38,6 +38,21 @@ def test_with_stored_key():
     check_decrypt_encrypt(key, password)
 
 
+def test_with_stored_key_only_file():
+    """
+    Test store generated key in text file.
+    """
+    GenKeySH(567).gen_sym_key(path_store="key.txt")
+
+    with open("key.txt", "r") as fr:
+        key = fr.read().strip()
+
+    password = "Hello World !!"
+    check_decrypt_encrypt(key, password)
+
+    os.system("rm -rf key.txt")
+
+
 def test_raise_error():
     with pytest.raises(GenKeySHException, match=r"AES key must be either.*"):
         GenKeySH().gen_sym_key(nb_bytes=17)

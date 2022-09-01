@@ -43,8 +43,10 @@ class GenKeySH:
             raise GenKeySHException("AES key must be either 16, 24, or 32 bytes long")
 
         if path_store is not None:
-            if not os.path.exists(os.path.split(path_store)[0]):
-                raise GenKeySHException(f"path to store the key is invalid : {path_store}")
+            path, _ = os.path.split(path_store)
+            if path != "":
+                if not os.path.exists(path):
+                    raise GenKeySHException(f"path to store the key is invalid : {path_store}")
 
         # Initialisation of the seed
         rnd.seed(self.seed)
