@@ -41,7 +41,7 @@ fi
 #Etape 3 : Vérification que la zone de stage Git est vide.
 echo -e "Etape 3/5 : Controle que la zone de stage soit vide."
 STAGE_FILE=$(git status | grep -c "git add")
-if [ $STAGE_FILE = 0 ] && [ $MODIFIED_FILE = 0 ];then
+if [ $STAGE_FILE = 0 ];then
 	echo -e "\t OK - La zone de staged est vide."
 else
 	echo -e "\t ERREUR - La zone de staged n'est pas vide. Commiter ou stasher tous vos fichiers avant."
