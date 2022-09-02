@@ -2,8 +2,8 @@
 
 [![PyPI Latest Release](https://img.shields.io/pypi/v/sh-crypt.svg)](https://pypi.org/project/sh-crypt/)
 [![License](https://img.shields.io/pypi/l/sh-crypt.svg)](https://github.com/steven1909/sh-crypt/blob/master/LICENSE)
-[![codecov](https://codecov.io/gh/steven1909/sh-crypt/branch/circleci-project-setup/graph/badge.svg?token=EU0M1RS2NI)](https://codecov.io/gh/steven1909/sh-crypt)
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/steven1909/sh-crypt/tree/circleci-project-setup.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/steven1909/sh-crypt/tree/circleci-project-setup)
+[![codecov](https://codecov.io/gh/steven1909/sh-crypt/branch/master/graph/badge.svg?token=EU0M1RS2NI)](https://codecov.io/gh/steven1909/sh-crypt)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/steven1909/sh-crypt/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/steven1909/sh-crypt/tree/master)
 
 ## A simple symetric encyption decryption algorithm
 ## About
