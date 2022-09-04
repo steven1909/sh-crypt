@@ -30,7 +30,7 @@ build: remove_build test
 
 install_and_test:
 	python setup.py install 
-	python demo/demo.py
+	cd demo/;python demo.py
 
 tag: build
 	bash build_utils/git-tag.sh
