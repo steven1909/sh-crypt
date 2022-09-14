@@ -5,13 +5,21 @@
 ###
 
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
-from cryptography.hazmat.primitives import padding
+from cryptography.hazmat.primitives import padding as sym_padding
+
+from cryptography.hazmat.primitives.asymmetric import rsa
+from cryptography.hazmat.primitives.asymmetric import padding as asym_padding
+from cryptography.hazmat.primitives import serialization, hashes
+
+from cryptography.exceptions import InvalidSignature
+
 import binascii
 import random as rnd
 import string
 import os
+import logging
 
-__version__ = "1.1.0"
+__version__ = "1.2.0"
 
-from .crypt import CryptSH, CryptSHException
+from .crypt import SymCryptSH, CryptSHException, AsymCryptSH
 from .gen_key import GenKeySH, GenKeySHException

@@ -11,10 +11,12 @@ requires-python = ">=3.7"
 keywords = ["encryption", "decryption", "cipher", "AES", "ECB", "crypto", "cryptography"]
 license = {text = "MIT license"}
 classifiers = [
-'Intended Audience :: End Users/Desktop', 'Topic :: Security :: Cryptography',
-'Topic :: Security', 'Development Status :: 5 - Production/Stable',
-'Natural Language :: English', 'License :: OSI Approved :: MIT License',
-'Operating System :: POSIX', 'Operating System :: Unix', 'Programming Language :: Python',
+'Intended Audience :: Developers', 
+'Topic :: Security :: Cryptography','Topic :: Security', 
+'Development Status :: 5 - Production/Stable',
+'Natural Language :: English', 
+'License :: OSI Approved :: MIT License',
+'Operating System :: POSIX :: Linux',
 'Programming Language :: Python :: 3'
 ]
 dependencies = [

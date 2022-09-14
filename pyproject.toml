@@ -4,17 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sh-crypt"
-version = "1.1.0"
+version = "1.2.0"
 description = "Simple symmetric encryption and decryption (ECB) for text"
 readme = "README.md"
 requires-python = ">=3.7"
 keywords = ["encryption", "decryption", "cipher", "AES", "ECB", "crypto", "cryptography"]
 license = {text = "MIT license"}
 classifiers = [
-'Intended Audience :: End Users/Desktop', 'Topic :: Security :: Cryptography',
-'Topic :: Security', 'Development Status :: 5 - Production/Stable',
-'Natural Language :: English', 'License :: OSI Approved :: MIT License',
-'Operating System :: POSIX', 'Operating System :: Unix', 'Programming Language :: Python',
+'Intended Audience :: Developers', 
+'Topic :: Security :: Cryptography','Topic :: Security', 
+'Development Status :: 5 - Production/Stable',
+'Natural Language :: English', 
+'License :: OSI Approved :: MIT License',
+'Operating System :: POSIX :: Linux',
 'Programming Language :: Python :: 3'
 ]
 dependencies = [

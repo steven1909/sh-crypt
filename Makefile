@@ -4,6 +4,7 @@ update_conf:
 
 test:update_conf remove_test
 	coverage run -m pytest
+	coverage report
 	coverage html -d html_coverage
 
 build_no_test: remove_build
