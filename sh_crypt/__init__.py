@@ -19,7 +19,7 @@ import string
 import os
 import logging
 
-__version__ = "1.2.0"
+__version__ = "1.2.1"
 
 from .crypt import SymCryptSH, CryptSHException, AsymCryptSH
 from .gen_key import GenKeySH, GenKeySHException
