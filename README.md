@@ -12,7 +12,7 @@ SH Crypt is base on library cryptography algorithm and use more specifically the
 
 Here are some code example to use the library.
 
-## Generate a key, encrypt and decrypt text
+## Generate a key, encrypt and decrypt text
 
 ```python
 from sh_crypt import GenKeySH, SymCryptSH, AsymCryptSH
