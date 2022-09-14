@@ -7,4 +7,4 @@
 from .. import *
 import pytest
 
-from .test_crypt import check_decrypt_encrypt
+from .test_crypt import check_decrypt_encrypt_sym
