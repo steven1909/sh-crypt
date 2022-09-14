@@ -18,7 +18,7 @@ key = key_gen.gen_sym_key(path_store="mykey.txt")
 
 password = "Hello World !!"
 
-crypt = CryptSH(key)
+crypt = SymCryptSH(key)
 
 encrypt_password = crypt.encrypt_message(password)
 # Ex : '469feb93adc2af609a98e6b7cee859bb'
