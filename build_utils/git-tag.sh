@@ -34,7 +34,7 @@ CHECK_TAG_GIT=$(git tag -l $VERSION_REPO_GIT | grep -c $VERSION_REPO_GIT)
 if [ "$CHECK_TAG_GIT" = "0" ];then
 	echo -e "\t OK - Le tag est valide."
 else
-	echo -e "\t ERREUR - Le tag est déjà utilisé sur le serveur. Vous devez choisir un nouveau numéro de version et l'écrire dans le fichier 'version'."
+	echo -e "\t ERREUR - Le tag est déjà utilisé sur le serveur. Vous devez choisir un nouveau numéro de version."
 	exit 1
 fi
 
