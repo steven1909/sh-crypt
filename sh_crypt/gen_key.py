@@ -40,12 +40,12 @@ class GenKeySH:
         
         Parameters :
         -----------     
-            - nb_bytes (int) : (default : 32) Number of bytes of the keys.
-            - path_store (str) : (default : None) Path to the text file which will contains the key.
+        - nb_bytes (int) : (default : 32) Number of bytes of the keys.
+        - path_store (str) : (default : None) Path to the text file which will contains the key.
                        
         Returns :
         ----------
-            - key (str) : The key.
+        - key (str) : The key.
         """
         if nb_bytes not in [16, 24, 32]:
             raise GenKeySHException("AES key must be either 16, 24, or 32 bytes long")
@@ -70,14 +70,14 @@ class GenKeySH:
         
         Parameters :
         -----------     
-            - nb_bytes (int) : (default : 2048) Number of bytes of the keys.
-            - path_store (str) : (default : None) Path to the text file which will contains the 
+        - nb_bytes (int) : (default : 2048) Number of bytes of the keys.
+        - path_store (str) : (default : None) Path to the text file which will contains the 
                                 private key. The public key will be written in a file ended with .pubkey
                        
         Returns :
         ----------
-            - private_key_str (str) : The private key.
-            - public_key_str (str) : The public key.        
+        - private_key_str (str) : The private key.
+        - public_key_str (str) : The public key.        
         """
 
         if nb_bytes <= 512:
